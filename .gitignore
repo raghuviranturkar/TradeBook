@@ -1,0 +1,79 @@
+# Build directories
+build/
+cmake-build-*/
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+
+# Compiled files
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+TradeBook
+TradeBook.exe
+TradeBookTests
+TradeBookTests.exe
+OrderBookTests
+OrderBookTests.exe
+LifecycleTests
+LifecycleTests.exe
+Benchmark
+Benchmark.exe
+debug_timestamp
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.vs/
+
+# Test outputs
+test_output.txt
+*.csv
+*.log
+*.tmp
+
+# Temporary files
+*.tmp
+*.temp
+*.backup
+*.bak
+*.orig
+*.rej
+
+# Archives
+*.zip
+*.tar.gz
+*.tgz
+*.rar
+
+# Documentation build
+docs/_build/
+docs/html/
+docs/latex/
+
+# Coverage reports
+*.gcda
+*.gcno
+*.gcov
+coverage/
+htmlcov/
+
+# Profiling
+*.prof
+*.gmon
+
+# C++ specific
+*.d
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.so.*
