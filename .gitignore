@@ -24,6 +24,7 @@ LifecycleTests.exe
 Benchmark
 Benchmark.exe
 debug_timestamp
+quick_test
 
 # IDE files
 .vscode/
