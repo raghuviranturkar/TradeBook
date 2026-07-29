@@ -163,31 +163,31 @@ Stress test benchmark showing performance with varying order counts (100, 1000, 
 
 ---
 
-## 10. [CSV Export](screenshots/10_csv.txt)
+## 10. [CSV Export](/docs/screenshots/10_csv.txt)
 
 CSV export of statistics for further analysis and reporting.
 
 ---
 
-## 11. [Error Handling](screenshots/11_error_handling.txt)
+## 11. [Error Handling](/docs/screenshots/11_error_handling.txt)
 
 Professional error messages with clear context for debugging.
 
 ---
 
-## 12. [Order Modification](screenshots/12_modification.txt)
+## 12. [Order Modification](/docs/screenshots/12_modification.txt)
 
 Order modification with detailed before/after display showing price and quantity changes.
 
 ---
 
-## 13. [Order Cancellation](screenshots/13_cancellation.txt)
+## 13. [Order Cancellation](/docs/screenshots/13_cancellation.txt)
 
 Order cancellation with confirmation message and status update.
 
 ---
 
-## [Full Output](screenshots/00_full_output.txt)
+## [Full Output](/docs/screenshots/00_full_output.txt)
 
 Complete program output showing all features in action.
 
