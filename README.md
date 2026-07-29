@@ -56,46 +56,8 @@ An order book is a real-time list of buy and sell orders for a financial instrum
 
 ## 📊 Architecture
 
-```mermaid
-graph TB
-    subgraph "TradeBook Architecture"
-        Main[main.cpp]
-        Engine[TradeEngine<br/>processOrder()]
-        
-        subgraph "Core Components"
-            Book[OrderBook<br/>bid/ask storage]
-            History[TradeHistory<br/>trade records]
-            Stats[EngineStatistics<br/>metrics & reporting]
-        end
-        
-        subgraph "Order Types"
-            Limit[Limit Orders<br/>price-time priority]
-            Market[Market Orders<br/>immediate execution]
-            IOC[IOC<br/>immediate-or-cancel]
-            FOK[FOK<br/>fill-or-kill]
-        end
-        
-        subgraph "Data Structures"
-            Map[std::map<br/>price levels]
-            List[std::list<br/>FIFO queues]
-            Unordered[std::unordered_map<br/>O(1) lookup]
-        end
-        
-        Main --> Engine
-        Engine --> Book
-        Engine --> History
-        Engine --> Stats
-        
-        Book --> Map
-        Map --> List
-        Book --> Unordered
-        
-        Limit --> Book
-        Market --> Book
-        IOC --> Book
-        FOK --> Book
-    end
-📁 Folder Structure
+
+## 📁 Folder Structure
 text
 TradeBook/
 ├── 📁 include/           # Header files
@@ -134,7 +96,7 @@ TradeBook/
 ├── 📄 CMakeLists.txt    # Build configuration
 ├── 📄 LICENSE           # MIT License
 └── 📄 .gitignore        # Git ignore rules
-🏗️ Data Structure Design
+## 🏗️ Data Structure Design
 Component	Data Structure	Purpose	Complexity
 Price Levels	std::map	Maintains sorted price levels for price-time priority	O(log n) insertion
 FIFO Queues	std::list	Preserves insertion order at each price level	O(1) insertion/deletion
@@ -150,7 +112,7 @@ Best Bid	O(1)	First element of map
 Best Ask	O(1)	First element of map
 Match Order	O(k log n)	k = number of matched orders
 FOK Check	O(m)	m = number of price levels checked
-🖼️ Screenshots
+## 🖼️ Screenshots
 Order Book Display
 text
 ========================================
@@ -233,7 +195,7 @@ text
   Orders/sec            : 5,953.49
   ----------------------------------------
 ========================================
-🛠️ Installation
+## 🛠️ Installation
 Prerequisites
 C++17 or higher
 
@@ -284,7 +246,7 @@ Complexity Analysis - Time and space complexity
 
 Design Decisions - Why specific choices were made
 
-🔮 Future Improvements
+## 🔮 Future Improvements
 ✅ Multi-threaded matching - Parallel order processing
 
 ✅ FIX Protocol - Financial Information Exchange standard
@@ -307,32 +269,13 @@ Design Decisions - Why specific choices were made
 
 ✅ Event Sourcing - Full audit trail
 
-🎯 Interview Questions
-If you're using this project for interview preparation, be ready to answer:
-
-How does your matching algorithm work?
-
-Why did you choose std::map for price levels?
-
-How do you achieve O(1) order cancellation?
-
-What's the difference between IOC and FOK?
-
-How do you handle partial fills?
-
-What is VWAP and why is it useful?
-
-How would you make this multi-threaded?
-
-What's the time complexity of matching an order?
-
-📝 License
+## 📝 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-👨‍💻 Author
+## 👨‍💻 Author
 Built as part of a 10-day trading engine development project for interview preparation and professional portfolio demonstration.
 
-⭐ Star History
+## ⭐ Star History
 If you find this project useful, please consider giving it a star on GitHub!
 
 Questions? Issues? Open an issue or reach out on GitHub Discussions
