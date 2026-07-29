@@ -109,49 +109,49 @@ Below is an example of the order book displaying both buy (bids) and sell (asks)
   - Notification when an order is completely filled
 ---
 # TradeBook Screenshots
-## 1. [Welcome Banner] (/docs/screenshots/01_welcome.txt)
+## 1. [Welcome Banner](/docs/screenshots/01_welcome.txt)
 
 Professional welcome screen showing the trading engine initialization.
 
 ---
 
-## 2. [Order Book Display] (/docs/screenshots/02_orderbook.txt)
+## 2. [Order Book Display](/docs/screenshots/02_orderbook.txt)
 
 The order book shows both sides (bids and asks) with price, quantity, and order counts.
 
 ---
 
-## 3. [Limit Order Execution] (/docs/screenshots/03_limit.txt)
+## 3. [Limit Order Execution](/docs/screenshots/03_limit.txt)
 
 Limit order execution with price-time priority matching.
 
 ---
 
-## 4. [Market Order Execution] (/docs/screenshots/04_market.txt)
+## 4. [Market Order Execution](/docs/screenshots/04_market.txt)
 
 Market order sweeping through multiple price levels for immediate execution.
 
 ---
 
-## 5. [IOC (Immediate-or-Cancel)] (/docs/screenshots/05_ioc.txt)
+## 5. [IOC (Immediate-or-Cancel)](/docs/screenshots/05_ioc.txt)
 
 IOC order execution showing partial fill and immediate cancellation of remaining quantity.
 
 ---
 
-## 6. [FOK (Fill-or-Kill)] (/docs/screenshots/06_fok.txt)
+## 6. [FOK (Fill-or-Kill)](/docs/screenshots/06_fok.txt)
 
 FOK order handling - either complete fill or complete cancellation (all-or-nothing).
 
 ---
 
-## 7. [Statistics Report] (/docs/screenshots/07_statistics.txt)
+## 7. [Statistics Report](/docs/screenshots/07_statistics.txt)
 
 Comprehensive trading session report with order statistics, trade metrics, volume, and VWAP.
 
 ---
 
-## 8. [Performance Report] (/docs/screenshots/08_performance.txt)
+## 8. [Performance Report](/docs/screenshots/08_performance.txt)
 
 Performance metrics showing execution time and throughput (orders/sec).
 
@@ -163,31 +163,31 @@ Stress test benchmark showing performance with varying order counts (100, 1000, 
 
 ---
 
-## 10. [CSV Export] (screenshots/10_csv.txt)
+## 10. [CSV Export](screenshots/10_csv.txt)
 
 CSV export of statistics for further analysis and reporting.
 
 ---
 
-## 11. [Error Handling] (screenshots/11_error_handling.txt)
+## 11. [Error Handling](screenshots/11_error_handling.txt)
 
 Professional error messages with clear context for debugging.
 
 ---
 
-## 12. [Order Modification] (screenshots/12_modification.txt)
+## 12. [Order Modification](screenshots/12_modification.txt)
 
 Order modification with detailed before/after display showing price and quantity changes.
 
 ---
 
-## 13. [Order Cancellation] (screenshots/13_cancellation.txt)
+## 13. [Order Cancellation](screenshots/13_cancellation.txt)
 
 Order cancellation with confirmation message and status update.
 
 ---
 
-## [Full Output] (screenshots/00_full_output.txt)
+## [Full Output](screenshots/00_full_output.txt)
 
 Complete program output showing all features in action.
 
