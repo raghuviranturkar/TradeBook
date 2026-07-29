@@ -35,63 +35,63 @@ TradeBook is a production-inspired C++ trading engine that simulates the core ma
 ---
 # TradeBook Screenshots
 ## 1. Welcome Banner
-![Welcome Banner](screenshots/01_welcome.txt)
+![Welcome Banner](/docs/screenshots/01_welcome.txt)
 
 Professional welcome screen showing the trading engine initialization.
 
 ---
 
 ## 2. Order Book Display
-![Order Book](screenshots/02_orderbook.txt)
+![Order Book](/docs/screenshots/02_orderbook.txt)
 
 The order book shows both sides (bids and asks) with price, quantity, and order counts.
 
 ---
 
 ## 3. Limit Order Execution
-![Limit Order](screenshots/03_limit.txt)
+![Limit Order](/docs/screenshots/03_limit.txt)
 
 Limit order execution with price-time priority matching.
 
 ---
 
 ## 4. Market Order Execution
-![Market Order](screenshots/04_market.txt)
+![Market Order](/docs/screenshots/04_market.txt)
 
 Market order sweeping through multiple price levels for immediate execution.
 
 ---
 
 ## 5. IOC (Immediate-or-Cancel)
-![IOC](screenshots/05_ioc.txt)
+![IOC](/docs/screenshots/05_ioc.txt)
 
 IOC order execution showing partial fill and immediate cancellation of remaining quantity.
 
 ---
 
 ## 6. FOK (Fill-or-Kill)
-![FOK](screenshots/06_fok.txt)
+![FOK](/docs/screenshots/06_fok.txt)
 
 FOK order handling - either complete fill or complete cancellation (all-or-nothing).
 
 ---
 
 ## 7. Statistics Report
-![Statistics Report](screenshots/07_statistics.txt)
+![Statistics Report](/docs/screenshots/07_statistics.txt)
 
 Comprehensive trading session report with order statistics, trade metrics, volume, and VWAP.
 
 ---
 
 ## 8. Performance Report
-![Performance Report](screenshots/08_performance.txt)
+![Performance Report](/docs/screenshots/08_performance.txt)
 
 Performance metrics showing execution time and throughput (orders/sec).
 
 ---
 
 ## 9. Benchmark Results
-![Benchmark](screenshots/09_benchmark.txt)
+![Benchmark](/docs/screenshots/09_benchmark.txt)
 
 Stress test benchmark showing performance with varying order counts (100, 1000, 5000, 10000 orders).
 
@@ -131,69 +131,19 @@ Order cancellation with confirmation message and status update.
 Complete program output showing all features in action.
 
 ---
-
-## Architecture Diagrams
-
-### High-Level Architecture
-![Architecture Diagram](screenshots/Architecture_Diagram_Code.png)
-
-Complete system architecture showing all components and their interactions.
-
-### Data Structure Flow
-![Data Structure Flow](screenshots/Data_Structure_Flow_Diagram.png)
-
-How orders flow through the data structures.
-
-### Matching Algorithm
-![Matching Algorithm](screenshots/Matching_Algorithm_Flow_Diagram.png)
-
-The core matching algorithm flow chart.
-
-### Trade Execution Lifecycle
-![Trade Execution Lifecycle](screenshots/Trade_Execution_Lifecycle.png)
-
-Order lifecycle from creation to execution or cancellation.
-
-### Performance Comparison
-![Performance Comparison](screenshots/Performance_Comparison_Diagram.png)
-
-Performance comparison across different order types.
-
-### Sequence Diagram
-![Sequence Diagram](screenshots/Sequence_Diagram.png)
-
-Sequence diagram showing interaction between components.
-
----
-
-## Screenshot Summary
-
-| # | Screenshot | Description |
-|---|------------|-------------|
-| 1 | [01_welcome.txt](/docs/screenshots/01_welcome.txt) | Welcome banner |
-| 2 | [02_orderbook.txt](/docs/screenshots/02_orderbook.txt) | Order book display |
-| 3 | [03_limit.txt](/docs/screenshots/03_limit.txt) | Limit order execution |
-| 4 | [04_market.txt](/docs/screenshots/04_market.txt) | Market order execution |
-| 5 | [05_ioc.txt](/docs/screenshots/05_ioc.txt) | IOC order handling |
-| 6 | [06_fok.txt](/docs/screenshots/06_fok.txt) | FOK order handling |
-| 7 | [07_statistics.txt](/docs/screenshots/07_statistics.txt) | Statistics report |
-| 8 | [08_performance.txt](/docs/screenshots/08_performance.txt) | Performance report |
-| 9 | [09_benchmark.txt](/docs/screenshots/09_benchmark.txt) | Benchmark results |
-| 10 | [10_csv.txt](/docs/screenshots/10_csv.txt) | CSV export |
-| 11 | [11_error_handling.txt](/docs/screenshots/11_error_handling.txt) | Error handling |
-| 12 | [12_modification.txt](/docs/screenshots/12_modification.txt) | Order modification |
-| 13 | [13_cancellation.txt](/docs/screenshots/13_cancellation.txt) | Order cancellation |
-| 14 | [00_full_output.txt](/docs/screenshots/00_full_output.txt) | Complete output |
-
----
----
 # 🏗 Architecture
+### Data Structure Flow
 ![Architecture Diagram Code](/docs/screenshots/Architecture_Diagram_Code.png)
+### Matching Algorithm
 ![Matching Algorithm Flow Diagram](/docs/screenshots/Matching_Algorithm_Flow_Diagram.png)
+### Data Structure Flow
 ![Data Structure Flow Diagram](/docs/screenshots/Data_Structure_Flow_Diagram.png)
+### Trade Execution Lifecycle
 ![Trade Execution Lifecycle](/docs/screenshots/Trade_Execution_Lifecycle.png)
+### Performance Comparison
+![Sequence Diagram (Order Flow)](/docs/screenshots/Sequence_Diagram.png)
+### Sequence Diagram
 ![Performance Comparison Diagram](/docs/screenshots/Performance_Comparison_Diagram.png)
-![Sequence Diagram (Order Flow)](/docs/screenshots/Performance_Comparison_Diagram.png)
 
 ---
 
