@@ -1,0 +1,51 @@
+  DEMO 7: STATISTICS REPORT
+========================================
+
+========================================
+      TRADING SESSION REPORT
+========================================
+
+  ORDERS
+  ----------------------------------------
+  Total Orders Received : 9
+  Buy Orders            : 6
+  Sell Orders           : 3
+  Limit Orders          : 8
+  Market Orders         : 1
+  IOC Orders            : 1
+  FOK Orders            : 1
+  ----------------------------------------
+  Filled Orders         : 0
+  Partially Filled      : 0
+  Cancelled Orders      : 1
+  Modified Orders       : 1
+  Rejected Orders       : 0
+  ----------------------------------------
+
+  TRADES
+  ----------------------------------------
+  Total Trades          : 0
+  Total Volume          : 0
+  Total Value           : $0.00
+  VWAP                  : $0.00
+  Avg Trade Size        : 0.00
+  Largest Trade         : 0
+  Smallest Trade        : 0
+  ----------------------------------------
+
+  PERFORMANCE
+  ----------------------------------------
+  Execution Time        : 0.119 ms
+  Orders/sec            : 75630.25
+  ----------------------------------------
+========================================
+
+========================================
+  DEMO 8: PERFORMANCE REPORT
+========================================
+
+========================================
+      PERFORMANCE REPORT
+========================================
+
+  Operation Timing

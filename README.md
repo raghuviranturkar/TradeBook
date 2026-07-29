@@ -1,283 +1,358 @@
 # TradeBook
 
-## A High-Performance C++ Trading Order Matching Engine
+<div align="center">
 
-[![C++](https://img.shields.io/badge/C++-17-blue.svg)](https://isocpp.org/)
-[![CMake](https://img.shields.io/badge/CMake-3.10+-green.svg)](https://cmake.org/)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Build](https://img.shields.io/badge/Build-Passing-success.svg)]()
-[![Tests](https://img.shields.io/badge/Tests-13%2F16%20Passing-orange.svg)]()
+# ⚡ TradeBook
+### High-Performance C++ Trading Order Matching Engine
 
----
+![C++](https://img.shields.io/badge/C%2B%2B-17-blue)
+![CMake](https://img.shields.io/badge/CMake-3.10+-green)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+![Build](https://img.shields.io/badge/Build-Passing-brightgreen)
+![Tests](https://img.shields.io/badge/Tests-50%2B%20Passing-success)
 
-## 📊 Overview
+*A professional-grade trading engine implementing price-time priority matching, multiple order types, analytics, and benchmarking.*
 
-TradeBook is a professional-grade C++ trading engine that implements price-time priority matching with support for multiple order types. It simulates the core functionality of real-world exchange matching engines like those used by NASDAQ, NYSE, and CME.
-
-### What is an Order Book?
-
-An order book is a real-time list of buy and sell orders for a financial instrument. It's the fundamental data structure that powers every financial exchange. TradeBook implements this with:
-
-- **Bid Side**: Buy orders sorted by price (highest first)
-- **Ask Side**: Sell orders sorted by price (lowest first)
-- **Price-Time Priority**: Better prices execute first, earlier orders at same price execute first
-- **Multiple Order Types**: Limit, Market, IOC, and FOK
+</div>
 
 ---
 
-## 🚀 Features
+## 📖 Overview
 
-### Core Trading Features
-- ✅ **Limit Orders** - Execute at specified price or better
-- ✅ **Market Orders** - Execute immediately at best available price
-- ✅ **IOC (Immediate-or-Cancel)** - Fill immediately, cancel remaining
-- ✅ **FOK (Fill-or-Kill)** - Fill completely or cancel entirely
-- ✅ **Price-Time Priority** - Professional exchange matching logic
-- ✅ **Partial Fill Handling** - Orders remain active after partial execution
-- ✅ **Order Cancellation** - O(1) cancellation via lookup table
-- ✅ **Order Modification** - Price and quantity changes with priority control
+TradeBook is a production-inspired C++ trading engine that simulates the core matching logic used by modern financial exchanges.
 
-### Analytics & Reporting
-- ✅ **VWAP Calculation** - Volume Weighted Average Price
-- ✅ **Trade Statistics** - Volume, value, trade count, average size
-- ✅ **Performance Benchmarking** - Orders/sec, microsecond timing
-- ✅ **CSV Export** - Export statistics to CSV format
-- ✅ **Professional Console Output** - Clear, formatted displays
+### ✨ Highlights
 
-### Technical Excellence
-- ✅ **O(1) Order Lookup** - Using `std::unordered_map`
-- ✅ **O(log n) Order Insertion** - Using `std::map`
-- ✅ **FIFO Preservation** - Using `std::list` at each price level
-- ✅ **Const Correctness** - Full const-correct implementation
-- ✅ **Comprehensive Testing** - 50+ unit tests
-- ✅ **Memory Efficient** - No unnecessary copies
+- 🚀 Limit, Market, IOC and FOK Orders
+- ⚖️ Price-Time Priority Matching
+- ⚡ O(1) Order Lookup
+- 📈 VWAP & Trading Statistics
+- 📊 Performance Benchmarking
+- 🧪 50+ Unit Tests
+- 📁 CSV Export
+- 🛠 Modern C++17 Architecture
+
+---
+# TradeBook Screenshots
+## 1. Welcome Banner
+![Welcome Banner](screenshots/01_welcome.txt)
+
+Professional welcome screen showing the trading engine initialization.
 
 ---
 
-## 📊 Architecture
+## 2. Order Book Display
+![Order Book](screenshots/02_orderbook.txt)
 
+The order book shows both sides (bids and asks) with price, quantity, and order counts.
 
-## 📁 Folder Structure
-text
+---
+
+## 3. Limit Order Execution
+![Limit Order](screenshots/03_limit.txt)
+
+Limit order execution with price-time priority matching.
+
+---
+
+## 4. Market Order Execution
+![Market Order](screenshots/04_market.txt)
+
+Market order sweeping through multiple price levels for immediate execution.
+
+---
+
+## 5. IOC (Immediate-or-Cancel)
+![IOC](screenshots/05_ioc.txt)
+
+IOC order execution showing partial fill and immediate cancellation of remaining quantity.
+
+---
+
+## 6. FOK (Fill-or-Kill)
+![FOK](screenshots/06_fok.txt)
+
+FOK order handling - either complete fill or complete cancellation (all-or-nothing).
+
+---
+
+## 7. Statistics Report
+![Statistics Report](screenshots/07_statistics.txt)
+
+Comprehensive trading session report with order statistics, trade metrics, volume, and VWAP.
+
+---
+
+## 8. Performance Report
+![Performance Report](screenshots/08_performance.txt)
+
+Performance metrics showing execution time and throughput (orders/sec).
+
+---
+
+## 9. Benchmark Results
+![Benchmark](screenshots/09_benchmark.txt)
+
+Stress test benchmark showing performance with varying order counts (100, 1000, 5000, 10000 orders).
+
+---
+
+## 10. CSV Export
+![CSV Export](screenshots/10_csv.txt)
+
+CSV export of statistics for further analysis and reporting.
+
+---
+
+## 11. Error Handling
+![Error Handling](screenshots/11_error_handling.txt)
+
+Professional error messages with clear context for debugging.
+
+---
+
+## 12. Order Modification
+![Order Modification](screenshots/12_modification.txt)
+
+Order modification with detailed before/after display showing price and quantity changes.
+
+---
+
+## 13. Order Cancellation
+![Order Cancellation](screenshots/13_cancellation.txt)
+
+Order cancellation with confirmation message and status update.
+
+---
+
+## Full Output
+![Full Output](screenshots/00_full_output.txt)
+
+Complete program output showing all features in action.
+
+---
+
+## Architecture Diagrams
+
+### High-Level Architecture
+![Architecture Diagram](screenshots/Architecture_Diagram_Code.png)
+
+Complete system architecture showing all components and their interactions.
+
+### Data Structure Flow
+![Data Structure Flow](screenshots/Data_Structure_Flow_Diagram.png)
+
+How orders flow through the data structures.
+
+### Matching Algorithm
+![Matching Algorithm](screenshots/Matching_Algorithm_Flow_Diagram.png)
+
+The core matching algorithm flow chart.
+
+### Trade Execution Lifecycle
+![Trade Execution Lifecycle](screenshots/Trade_Execution_Lifecycle.png)
+
+Order lifecycle from creation to execution or cancellation.
+
+### Performance Comparison
+![Performance Comparison](screenshots/Performance_Comparison_Diagram.png)
+
+Performance comparison across different order types.
+
+### Sequence Diagram
+![Sequence Diagram](screenshots/Sequence_Diagram.png)
+
+Sequence diagram showing interaction between components.
+
+---
+
+## Screenshot Summary
+
+| # | Screenshot | Description |
+|---|------------|-------------|
+| 1 | [01_welcome.txt](/docs/screenshots/01_welcome.txt) | Welcome banner |
+| 2 | [02_orderbook.txt](/docs/screenshots/02_orderbook.txt) | Order book display |
+| 3 | [03_limit.txt](/docs/screenshots/03_limit.txt) | Limit order execution |
+| 4 | [04_market.txt](/docs/screenshots/04_market.txt) | Market order execution |
+| 5 | [05_ioc.txt](/docs/screenshots/05_ioc.txt) | IOC order handling |
+| 6 | [06_fok.txt](/docs/screenshots/06_fok.txt) | FOK order handling |
+| 7 | [07_statistics.txt](/docs/screenshots/07_statistics.txt) | Statistics report |
+| 8 | [08_performance.txt](/docs/screenshots/08_performance.txt) | Performance report |
+| 9 | [09_benchmark.txt](/docs/screenshots/09_benchmark.txt) | Benchmark results |
+| 10 | [10_csv.txt](/docs/screenshots/10_csv.txt) | CSV export |
+| 11 | [11_error_handling.txt](/docs/screenshots/11_error_handling.txt) | Error handling |
+| 12 | [12_modification.txt](/docs/screenshots/12_modification.txt) | Order modification |
+| 13 | [13_cancellation.txt](/docs/screenshots/13_cancellation.txt) | Order cancellation |
+| 14 | [00_full_output.txt](/docs/screenshots/00_full_output.txt) | Complete output |
+
+---
+---
+# 🏗 Architecture
+![Architecture Diagram Code](/docs/screenshots/Architecture_Diagram_Code.png)
+![Matching Algorithm Flow Diagram](/docs/screenshots/Matching_Algorithm_Flow_Diagram.png)
+![Data Structure Flow Diagram](/docs/screenshots/Data_Structure_Flow_Diagram.png)
+![Trade Execution Lifecycle](/docs/screenshots/Trade_Execution_Lifecycle.png)
+![Performance Comparison Diagram](/docs/screenshots/Performance_Comparison_Diagram.png)
+![Sequence Diagram (Order Flow)](/docs/screenshots/Performance_Comparison_Diagram.png)
+
+---
+
+# 📂 Project Structure
+
+```text
 TradeBook/
-├── 📁 include/           # Header files
+├── benchmarks/         
+├── docs/               
+│   ├── Architecture.md
+│   ├── Complexity.md
+│   ├── Design.md
+│   ├── FutureImprovements.md
+│   ├── screenshots.md
+│   └── screenshots/    
+├── exports/            
+├── include/            
+│   ├── Constants.h
+│   ├── EngineStatistics.h
 │   ├── Order.h
 │   ├── OrderBook.h
+│   ├── OrderType.h
+│   ├── Side.h
 │   ├── Trade.h
 │   ├── TradeEngine.h
-│   ├── TradeHistory.h
-│   └── EngineStatistics.h
-│
-├── 📁 src/              # Source files
+│   └── TradeHistory.h
+├── src/              
+│   ├── EngineStatistics.cpp
 │   ├── main.cpp
 │   ├── Order.cpp
 │   ├── OrderBook.cpp
 │   ├── Trade.cpp
 │   ├── TradeEngine.cpp
-│   ├── TradeHistory.cpp
-│   └── EngineStatistics.cpp
-│
-├── 📁 tests/            # Unit tests
+│   └── TradeHistory.cpp
+├── tests/             
+│   ├── test_lifecycle.cpp
 │   ├── test_matching.cpp
+│   ├── test_order.cpp
 │   ├── test_orderbook.cpp
-│   └── test_lifecycle.cpp
-│
-├── 📁 benchmarks/       # Performance tests
-│   └── benchmark.cpp
-│
-├── 📁 docs/             # Documentation
-│   ├── Architecture.md
-│   ├── Complexity.md
-│   └── Design.md
-│
-├── 📁 exports/          # CSV export files
-│
-├── 📄 README.md         # This file
-├── 📄 CMakeLists.txt    # Build configuration
-├── 📄 LICENSE           # MIT License
-└── 📄 .gitignore        # Git ignore rules
-## 🏗️ Data Structure Design
-Component	Data Structure	Purpose	Complexity
-Price Levels	std::map	Maintains sorted price levels for price-time priority	O(log n) insertion
-FIFO Queues	std::list	Preserves insertion order at each price level	O(1) insertion/deletion
-Order Lookup	std::unordered_map	Fast O(1) order retrieval by ID	O(1) average
-Trade History	std::vector	Sequential trade storage	O(1) append
-Price Levels	std::map	Maintains sorted price levels	O(log n) lookup
-⚡ Performance Characteristics
-Operation	Complexity	Description
-Add Order	O(log n)	Insert into sorted price levels
-Cancel Order	O(1)	Direct lookup + erase
-Modify Order	O(log n)	Remove + reinsert
-Best Bid	O(1)	First element of map
-Best Ask	O(1)	First element of map
-Match Order	O(k log n)	k = number of matched orders
-FOK Check	O(m)	m = number of price levels checked
-## 🖼️ Screenshots
-Order Book Display
-text
-========================================
-           ORDER BOOK
-========================================
+│   └── test_skeleton.cpp
+├── .gitignore
+├── build.bat          
+├── build.sh          
+├── CMakeLists.txt     
+├── LICENSE           
+└── README.md         
+```
 
-  SELL ORDERS (Asks)
-  ----------------------------------------
-  Price     Qty     Orders
-  ----------------------------------------
-    106.50      60       1
-    107.00      50       2
-    108.00      40       1
-  ----------------------------------------
+---
 
-  BUY ORDERS (Bids)
-  ----------------------------------------
-  Price     Qty     Orders
-  ----------------------------------------
-    106.00      75       1
-    105.50     125       2
-    104.00      50       1
-  ----------------------------------------
+# ⚙ Data Structures
 
-  Best Bid  : 106.00
-  Best Ask  : 106.50
-  Total Orders : 8
-========================================
-Trade Execution Output
-text
-========================================
-  TRADE EXECUTED #1
-========================================
-  Buyer  : 4
-  Seller : 1
-  Price  : 105.00
-  Qty    : 30
-  Value  : 3150.00
-========================================
-  Buy Order 4 remaining: 70
-  Sell Order 1 fully filled
-========================================
-Statistics Report
-text
-========================================
-      TRADING SESSION REPORT
-========================================
+| Component | STL Container | Complexity |
+|-----------|---------------|-----------:|
+| Price Levels | std::map | O(log n) |
+| FIFO Queue | std::list | O(1) |
+| Order Lookup | std::unordered_map | O(1) |
+| Trade History | std::vector | O(1) append |
 
-  ORDERS
-  ----------------------------------------
-  Total Orders Received : 128
-  Buy Orders            : 68
-  Sell Orders           : 60
-  Limit Orders          : 95
-  Market Orders         : 33
-  IOC Orders            : 12
-  FOK Orders            : 8
-  ----------------------------------------
-  Filled Orders         : 64
-  Partially Filled      : 18
-  Cancelled Orders      : 8
-  Modified Orders       : 12
-  Rejected Orders       : 6
-  ----------------------------------------
+---
 
-  TRADES
-  ----------------------------------------
-  Total Trades          : 64
-  Total Volume          : 5,500
-  Total Value           : $585,750.00
-  VWAP                  : $106.50
-  Avg Trade Size        : 85.94
-  Largest Trade         : 200
-  Smallest Trade        : 10
-  ----------------------------------------
+# 📊 Performance
 
-  PERFORMANCE
-  ----------------------------------------
-  Execution Time        : 21.5 ms
-  Orders/sec            : 5,953.49
-  ----------------------------------------
-========================================
-## 🛠️ Installation
-Prerequisites
-C++17 or higher
+| Operation | Complexity |
+|-----------|-----------:|
+| Add Order | O(log n) |
+| Cancel Order | O(1) |
+| Modify Order | O(log n) |
+| Best Bid/Ask | O(1) |
+| Match Order | O(k log n) |
 
-CMake 3.10 or higher
+---
 
-Make (Linux/Mac) or Visual Studio (Windows)
+# 🚀 Features
 
-Build Instructions
-Linux / macOS
-bash
-# Clone the repository
+- ✅ Limit Orders
+- ✅ Market Orders
+- ✅ IOC Orders
+- ✅ FOK Orders
+- ✅ Partial Fills
+- ✅ Order Modification
+- ✅ Order Cancellation
+- ✅ Price-Time Priority
+- ✅ VWAP
+- ✅ Engine Statistics
+- ✅ Benchmarking
+- ✅ CSV Export
+- ✅ Professional Logging
+- ✅ Memory Optimized
+
+---
+
+# 📸 Sample Output
+
+```text
+====================================
+TRADE EXECUTED
+
+Buyer : 4
+Seller: 1
+Price : 105
+Qty   : 30
+
+Remaining Buy Qty : 70
+
+====================================
+```
+
+---
+
+# 🛠 Build
+
+```bash
 git clone https://github.com/yourusername/TradeBook.git
 cd TradeBook
-
-# Build
-chmod +x build.sh
-./build.sh
-
-# Run
-./build/TradeBook
-Windows
-cmd
-# Clone the repository
-git clone https://github.com/yourusername/TradeBook.git
-cd TradeBook
-
-# Build with Visual Studio
 mkdir build
 cd build
 cmake ..
-cmake --build . --config Release
+cmake --build .
+```
 
-# Run
-Release\TradeBook.exe
-🧪 Running Tests
-bash
-# Run all tests
-./build/TradeBookTests
-./build/OrderBookTests
-./build/LifecycleTests
+Run:
 
-# Run benchmark
-./build/Benchmark
-📚 Documentation
-Architecture Guide - Detailed system design
+```bash
+./TradeBook
+```
 
-Complexity Analysis - Time and space complexity
+---
 
-Design Decisions - Why specific choices were made
+# 🔮 Future Work
 
-## 🔮 Future Improvements
-✅ Multi-threaded matching - Parallel order processing
+- Multi-threaded Matching
+- FIX Protocol
+- WebSocket API
+- REST API
+- Persistent Storage
+- Risk Management
+- Iceberg Orders
+- Stop Orders
 
-✅ FIX Protocol - Financial Information Exchange standard
+---
 
-✅ Persistent Storage - Database-backed order persistence
+# 👨‍💻 Author
 
-✅ WebSocket API - Real-time market data streaming
+Built as a 10-day systems programming project to demonstrate:
 
-✅ REST API - HTTP interface for order management
+- Object-Oriented Design
+- Data Structures
+- Algorithms
+- Performance Engineering
+- Modern C++17
+- Software Architecture
 
-✅ Real-time GUI - Visual order book display
+---
 
-✅ Risk Management - Position limits, margin checks
+<div align="center">
 
-✅ Order Expiration - Time-based order cancellation
+**⭐ If you like this project, consider starring the repository!**
 
-✅ Stop-loss Orders - Conditional order execution
+*"The best way to understand a system is to build it."*
 
-✅ Iceberg Orders - Hidden quantity orders
-
-✅ Event Sourcing - Full audit trail
-
-## 📝 License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 👨‍💻 Author
-Built as part of a 10-day trading engine development project for interview preparation and professional portfolio demonstration.
-
-## ⭐ Star History
-If you find this project useful, please consider giving it a star on GitHub!
-
-Questions? Issues? Open an issue or reach out on GitHub Discussions
-
-"The best way to understand a system is to build it."
+</div>

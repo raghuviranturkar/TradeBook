@@ -1,0 +1,21 @@
+  ORDER MODIFIED
+========================================
+  Order ID : 15
+  Side     : BUY
+  Old Price: 100.00
+  New Price: 105.00
+  Old Qty  : 50
+  New Qty  : 75
+  Remaining: 0
+  Status   : ACTIVE
+  Note     : Price changed - order reinserted
+========================================
+
+========================================
+           ORDER BOOK
+========================================
+
+  SELL ORDERS (Asks)
+  ----------------------------------------
+  Price     Qty     Orders
+  ----------------------------------------

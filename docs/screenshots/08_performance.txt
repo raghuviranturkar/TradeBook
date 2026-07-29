@@ -1,0 +1,35 @@
+  DEMO 8: PERFORMANCE REPORT
+========================================
+
+========================================
+      PERFORMANCE REPORT
+========================================
+
+  Operation Timing
+  ----------------------------------------
+  Total Execution   : 0.119 ms
+  Orders/sec        : 75630.25
+  ----------------------------------------
+
+  Operation Breakdown
+  ----------------------------------------
+     Limit Orders : 0.029 ms
+    Market Orders : 0.01 ms
+       IOC Orders : 0.009 ms
+       FOK Orders : 0.008 ms
+    Modifications : 0.005 ms
+    Cancellations : 0.003 ms
+  ----------------------------------------
+========================================
+
+========================================
+  DEMO 9: CSV EXPORT
+========================================
+Exporting statistics to CSV...
+✅ Statistics exported to trading_stats.csv
+
+========================================
+  DEMO 10: ORDER BOOK SUMMARY
+========================================
+
+  ORDER BOOK SUMMARY

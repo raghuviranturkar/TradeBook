@@ -152,20 +152,3 @@ k trade executions
 Total: O(n log n)
 
 text
-
-## Interview-Ready Questions
-
-### Q: Why is CancelOrder O(1)?
-**A:** We store iterators to each order in an unordered_map. When cancelling, we directly access the iterator and erase the order from its price level list in O(1).
-
-### Q: Why is AddOrder O(log n)?
-**A:** We use std::map for price levels, which has O(log n) insertion to maintain sorted order. The actual order insertion into the list is O(1).
-
-### Q: What's the bottleneck?
-**A:** The matching operation that sweeps multiple price levels. However, in typical trading, most orders match against the first price level (O(1)), making the average case very efficient.
-
-### Q: How would you handle 1 million orders?
-**A:** The current design scales well. All operations are O(log n) or O(1) except matching, which is O(k log n). For 1 million orders, we'd need about 20 comparisons per operation.
-
-### Q: Can you improve performance further?
-**A:** Yes - use skip lists for faster lookup, add thread pools for parallel processing, implement lock-free data structures, and use memory pools for allocation.
